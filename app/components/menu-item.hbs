@@ -1,7 +1,14 @@
-<li class="menu-item">
-    <h4>{{food.name}}</h4>
-    <img src="/img/{{food.image}}" alt="{{food.name}}">
-    <p>{{#link-to 'item' food.id}}Details{{/link-to}}</p>
-</li>
+<h4>{{food.name}}</h4>
+<img src="/img/{{food.image}}" alt="{{food.name}}">
+<div>
+    <select>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+    </select>
+</div>
+<p>
+    {{#link-to 'item' food.id}}Details{{/link-to}}
+</p>
 
 {{yield}}
