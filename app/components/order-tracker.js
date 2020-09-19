@@ -1,4 +1,5 @@
-import Component from '@glimmer/component';
+import Ember from 'ember';
 
-export default class OrderTrackerComponent extends Component {
-}
+export default Ember.Component.extend({
+    orderManager: Ember.inject.service('order-manager')
+});
