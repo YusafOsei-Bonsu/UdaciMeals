@@ -8,4 +8,5 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
   this.route('menu');
+  this.route('item', { path: 'item/:item_name' });
 });
