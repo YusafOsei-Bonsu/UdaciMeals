@@ -6,6 +6,7 @@
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>
     </select>
+    <button  {{action 'chooseItem' food.name}}>Select Item</button>
 </div>
 <p>
     {{#link-to 'item' food.id}}Details{{/link-to}}
